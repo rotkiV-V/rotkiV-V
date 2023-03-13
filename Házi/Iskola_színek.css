@@ -1,20 +1,69 @@
-.barna
+.krém
 {
     background-color: rgb(255, 199, 136);
+    width: 50px;
+    height: 50px;
 }
-.barna2
+
+.krém2
 {
     background-color: rgba(255, 199, 136, 0.76);
+    width: 50px;
+    height: 50px;
 }
-.barna3
+
+.krém3
 {
     background-color: rgba(255, 199, 136, 0.651);
+    width: 50px;
+    height: 50px;
 }
-.barna4
+
+.krém4
 {
     background-color: rgba(255, 199, 136, 0.438);
+    width: 50px;
+    height: 50px;
 }
-.barna5
+
+.krém5
 {
     background-color: rgba(255, 199, 136, 0.336);
+    width: 50px;
+    height: 50px;
+}
+
+.barna
+{
+    background-color :rgb(196, 115, 39)
+    width: 50px;
+    height: 50px;
+}
+
+.barna2
+{
+    background-color :rgba(196, 115, 39, 0.747)
+    width: 50px;
+    height: 50px;
+}
+
+.barna3
+{
+    background-color :rgba(196, 115, 39, 0.575)
+    width: 50px;
+    height: 50px;
+}
+
+.barna4
+{
+    background-color :rgba(196, 115, 39, 0.438)
+    width: 50px;
+    height: 50px;
+}
+
+.barna5
+{
+    background-color :rgba(196, 115, 39, 0.13)
+    width: 50px;
+    height: 50px;
 }
