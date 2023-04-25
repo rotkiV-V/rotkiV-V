@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TextMate</title>
+    <link rel="icon" type="image/x-icon" href="Textmate kep.png">
+    <style>
+        a:link {
+        color: white;
+        background-color: transparent;
+        text-decoration: none;
+        }
+        a:visited {
+        color: white;
+        background-color: transparent;
+        text-decoration: none;
+        }
+        h2 {
+            text-align: center;
+        }
+        section {
+        margin: 10px;
+        padding: 10px;
+        border: 1px solid #333;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1><a href="main.html">Főoldal</a></h1>
+    </header>
+    <section>
+        <h2>TextMate</h2>
+    </section>
+    <ul>
+        <li>
+            <p>A TextMate 1.0 5 hónapos fejlesztés után 2004. október 5-én jelent meg, majd 2004. október 21-én az 1.0.1-es verzió következett. A kiadás egy kis funkciókészlet jó megvalósítására koncentrált, nem rendelkezett beállítási ablakkal vagy eszköztárral, nem integrálta az FTP-t, és nem voltak nyomtatási lehetőségei. Eleinte csak kevés programozási nyelvet támogatott, mivel csak néhány "nyelvköteg" készült. Ennek ellenére egyes fejlesztők a TextMate e korai és hiányos változatát üdvözlendő változásnak találták a BBEdit évtizedes dominanciája miatt stagnálónak tekintett piacon.</p>
+
+            <p>A TextMate 1.0.2 2004. december 10-én jelent meg. A TextMate 1.1 bétasorozatában a TextMate új funkciókkal gazdagodott: egy beállítási ablak grafikus felhasználói felülettel a témák létrehozásához és szerkesztéséhez; egy állapotsor szimbólumlistával; menük a nyelvi és lapbeállítások kiválasztásához, valamint egy "kötegszerkesztő" a nyelvspecifikus testreszabások szerkesztéséhez. 2006. január 6-án Odgaard kiadta a TextMate 1.5-öt, az első "stabil kiadást" az 1.0.2 óta. A kritikák pozitívak voltak, ellentétben a korábbi verziókkal, amelyeket kritizáltak.</p>
+            
+            <p>A TextMate fejlesztése 2006 közepéig folytatódott. 2006. augusztus 8-án a TextMate elnyerte a legjobb fejlesztői eszköznek járó Apple Design Award díjat az Apple Worldwide Developers Conference rendezvényén, San Franciscóban, Kaliforniában, "harsány tapsot kapva". 2006 februárjában a TextMate blogjában a jövőbeli irányokkal kapcsolatos szándékokat fogalmaztak meg, beleértve a jobb projektmenedzsmentet, egy plug-in rendszerrel, amely támogatja a távoli fájlrendszereket, például az FTP-t, és a revíziós vezérlőrendszereket, például a Subversion-t. 2007 folyamán az alapvető alkalmazás csak minimálisan változott, bár a "nyelvi csomagok" tovább fejlődtek.</p>
+            
+            <p>2009 júniusában bejelentették, hogy a TextMate 2 körülbelül 90 százalékban elkészült, de a végleges funkciók listáját nem hozták nyilvánosságra. 2011 decemberében a TextMate blogon egy nyilvános alfát tettek letölthetővé, amelyet 2016 végén egy release candidate követett. A TextMate 2-t a TextMate blogon keresztül lehetett letölteni. A végleges változat 2019 szeptemberében jelent meg.</p>
+            
+            <p>2012 augusztusában a TextMate 2 forráskódját a GitHubon tették közzé a GPL-3.0-or-later feltételei szerint, a fejlesztő ezzel próbálta ellensúlyozni az Apple által a Mac App Store-on keresztül terjesztett szoftverekre vonatkozó korlátozásokat. Odgaard kijelentette, hogy jobban szereti, ha a javításokat közkincsként kapja, mivel ez megőrzi a lehetőségét, hogy egy jövőbeli verziót megengedőbb licenc alatt adjon ki, vagy egy verziót tegyen elérhetővé a Mac App Store-on. Odgaard azt is kijelentette, hogy van egy barátja, aki a TextMate néhány keretrendszerét használja egy zárt forráskódú projektben, és ők nem tudták beépíteni a GPL alatt kiadott javításokat.</p>
+            
+            <p><h3><li>Jellemzők</li></h3></p>
+            <p>Nyelvi nyelvtanok</p>
+            <p>A TextMate nyelvtanok lehetővé teszi a felhasználók számára, hogy saját, tetszőlegesen összetett szintaxiskiemelő módokat hozzanak létre azáltal, hogy minden dokumentum kulcsszavához egyedi nevet rendelnek.[19] A nyelvtanok definiálásához az Apple ASCII tulajdonságlista formátumának módosított változatát használja. Ezek a nyelvtanok lehetővé teszik, hogy az Oniguruma reguláris kifejezések könyvtárának segítségével egymásba ágyazott szabályokat definiáljanak, majd konkrét "hatóköröket" rendeljenek hozzájuk: összetett címkéket, amelyek azonosítják őket a színezéshez.</p>
+            
+            <p>Egy dokumentum minden egyes pontjához egy vagy több hatókör van hozzárendelve, amelyek meghatározzák, hogy a dokumentumban hol van a pont, hogyan kell színezni, és hogy a TextMate-nek milyen viselkedést kell tanúsítania az adott ponton. Például a "Külső hivatkozások" szakaszban található egyik hivatkozás címe a következő hatókörrel rendelkezik:</p>
+            
+            <p><img src="TextMatewebkep.png" style="float: right;">Ez a hatókör azt mondja, hogy egy MediaWiki dokumentumon belül egy listán belüli link címét nézzük.</p>
+            
+            <p>A TextMate témák bármilyen hatókörrel jelölhetnek, különböző pontossággal. Például az egyik téma dönthet úgy, hogy minden konstansot (constant.*) egyformán színez, míg egy másik úgy dönthet, hogy a numerikus konstansokat (constant.numeric.*) másképp kell színezni, mint a szökött karaktereket (constant.character.escape.*). A hierarchikus hatókör szintaxis lehetővé teszi a nyelvi szerzők és a témák szerzői számára a lefedettség különböző szintjeit, így mindegyikük választhat, hogy az egyszerűség vagy a teljesség mellett dönt, ahogyan akarja.</p>
+            
+            <p>A TextMate dokumentációja a különböző programozási nyelvekben általánosan használt elnevezések listáját tartalmazza a csomagok közötti átjárhatóság érdekében.</p>
+            
+            
+            <p><h3><li>Parancsok</li></h3></p>
+            <p>A TextMate támogatja a felhasználó által definiált és a felhasználó által szerkeszthető parancsokat, amelyeket a bash vagy a shebanggel megadott értelmező értelmez. A parancsokat a környezeti változókon kívül sokféle bemenetet küldhet a TextMate (az aktuális dokumentum, a kijelölt szöveg, az aktuális szó stb.), és a kimenetüket a TextMate hasonlóan sokféleképpen kezelheti. A legegyszerűbb esetben egy parancs megkaphatja a kiválasztott szöveget, átalakíthatja azt, és a kijelölés helyébe lépve újra beillesztheti a dokumentumba. Más parancsok egyszerűen megjeleníthetnek egy eszköztippet, létrehozhatnak egy új dokumentumot a kimenetükhöz, vagy megjeleníthetik azt weblapként a TextMate beépített HTML renderelőjének segítségével.</p>
+
+            <p>Sok nyelvspecifikus csomag, például a bash, a PHP vagy a Ruby tartalmaz parancsokat az aktuális dokumentum vagy projekt fordítására és/vagy futtatására. Sok esetben a kód folyamatának STDOUT és STDERR adatai a TextMate egyik ablakában jelennek meg.</p>
+
+            <p><h3><li>Snippetek</li></h3></p>
+            <p>A TextMate "snippetek" legegyszerűbben olyan szövegdarabok, amelyeket a dokumentumba az aktuális helyen egy kontextusfüggő billentyűleütéssel vagy a tabulátor kitöltésével lehet beilleszteni. A snippetek "intelligensek", támogatják a "tabulátormegállást", a dinamikus frissítést, a környezeti változókhoz való hozzáférést és a soron belüli szkriptek futtatásának lehetőségét. Ez bonyolult viselkedéseket tesz lehetővé. A tab stopok a "tab" billentyűvel ciklikusan végigjárhatók, és támogatják az alapértelmezett szöveget, a legördülő ablakokat, a snippet elemeinek kiegészítését. Ezeknek a tab-stopoknak az eredményei dinamikusan megváltoztathatók a snippet egy másik részében, ahogy a felhasználó kitölti a stopot. A TextMate környezeti változók használhatók, amelyek támogatják az aktuális hatókörre, a sorszámra vagy a szerző nevére stb. vonatkozó információkat. A snippetek képesek inline shell szkriptek futtatására is.</p>
+
+            <p><h3><li>Bundles</li></h3></p>
+            <p>A TextMate nyelvtanok, snippetek, makrók, parancsok és sablonok funkcionalitást tartalmazó "csomagokba" csoportosíthatók. Bármely snippet, makró vagy parancs futtatható egy billentyűparancs megnyomásával, egy adott szó beírásával, majd a "tabulátor" billentyű lenyomásával (úgynevezett "tabulátor triggerek"), vagy a parancs kiválasztásával egy menüből. A tabulátor triggerek különösen hasznosak; a tabulátor triggerek és a snippetek kombinációja nagyban megkönnyíti a kódolást bőbeszédű nyelveken, vagy olyan nyelveken, ahol gyakran gépelt minták vannak.</p>
+
+            <p>A snippetek, makrók és parancsok egy adott hatókörre korlátozhatók, így például a "close html tag" parancs nem működik egy python szkriptben, felszabadítva ezzel a billentyűparancsot, amelyet másra lehet használni. Ez lehetővé teszi, hogy az egyes nyelvek, sőt az egyes hatókörök is felülbírálhassák a beépített parancsokat, például a "Reformat Paragraph" parancsot, speciálisabb változatokkal. Még az olyan speciális billentyűk is felülbírálhatók, mint a return billentyű és a szóköz.</p>
+
+            <p>Elérhető egy Subversion tároló, amely a szerkesztőcsomaggal szállított csomagoknál sokkal több csomagot tartalmaz, a Markdowntól a blogoláson át a MIPS assembly nyelvig mindenre.</p>
+
+        </li>
+    </ul>  
+</body>
+</html>
